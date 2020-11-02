@@ -1,0 +1,12 @@
+name: Pull Request Diff Comment
+description: Adds/hides diff comments on pull requests.
+inputs:
+  diff-path:
+    description: 'The path to the diff file'
+    required: true
+  github-token:
+    description: 'The github token'
+    required: true
+runs:
+  using: 'node12'
+  main: 'dist/index.js'

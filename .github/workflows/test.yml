@@ -1,0 +1,15 @@
+name: "test"
+on: [ pull_request ]
+
+jobs:
+
+  test:
+    runs-on: ubuntu-latest
+    steps:
+
+      - uses: Brightspace/third-party-actions@actions/checkout
+
+      - uses: ./
+        with:
+          diff-path: .github/workflows/test.diff
+          github-token: ${{secrets.GITHUB_TOKEN}}

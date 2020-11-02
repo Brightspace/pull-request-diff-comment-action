@@ -1,0 +1,35 @@
+{
+  "name": "pull-request-diff-comment-action",
+  "version": "0.0.0",
+  "description": "Adds/hides diff comments on pull requests.",
+  "main": "src/index.js",
+  "scripts": {
+    "lint": "eslint .",
+    "prepare": "ncc build src/index.js -o dist --source-map --license licenses.txt",
+    "all": "npm run lint && npm run prepare"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Brightspace/pull-request-diff-comment-action.git"
+  },
+  "keywords": [
+    "GitHub",
+    "Actions",
+    "JavaScript",
+    "Feature Flags"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Brightspace/pull-request-diff-comment-action/issues"
+  },
+  "homepage": "https://github.com/Brightspace/pull-request-diff-comment-action#readme",
+  "dependencies": {
+    "@actions/core": "^1.2.6",
+    "@actions/github": "^4.0.0"
+  },
+  "devDependencies": {
+    "@vercel/ncc": "^0.24.1",
+    "eslint": "^7.12.1"
+  }
+}
