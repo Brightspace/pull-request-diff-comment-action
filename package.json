@@ -26,7 +26,7 @@
   "homepage": "https://github.com/Brightspace/pull-request-diff-comment-action#readme",
   "dependencies": {
     "@actions/core": "^1.2.6",
-    "@actions/github": "^4.0.0"
+    "@actions/github": "^5.1.1"
   },
   "devDependencies": {
     "@vercel/ncc": "^0.24.1",
