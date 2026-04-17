@@ -5890,7 +5890,7 @@ query comments( $owner: String!, $repo: String! $number: Int! ) {
 async function minimizeComment( octokit, commentId ) {
 
 	const mutation = `
-mutation commentMutation( $subjectId: String! ) {
+mutation commentMutation( $subjectId: ID! ) {
 	__typename
 	minimizeComment(
 		input: {
